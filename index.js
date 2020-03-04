@@ -45,7 +45,7 @@ class UserAvatar extends React.PureComponent {
     if (typeof size !== "number") size = parseInt(size);
     name = name
       .split(" ")
-      .splice(0, 3)
+      .splice(0, 2)
       .join(" ");
     let abbr = initials(name);
     if (!abbr) abbr = defaultName;
